@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Estagio</string>
+    <string name="passarprotetor">Passar protetor</string>
+    <string name="Mes"><![CDATA[< Mês >]]></string>
+    <string name="Ano"><![CDATA[< Ano >]]></string>
+    <string name="Dadodiario">100%</string>
+    <string name="Dadomes">100%</string>
+    <string name="Dadossemanal">100%</string>
+    <string name="Dadosanual">100%</string>
+    <string name="proximavez">Próxima vez em</string>
+    <string name="vezesaodia">Vezes ao dia</string>
+    <string name="fototipo">Fototipo</string>
+    <string name="Pele">Pele</string>
+    <string name="semana">Semana</string>
+    <string name="relatorio">RELATÓRIO</string>
+    <string name="mediadiaria">Média diária</string>
+    <string name="Mediasemanal">Média semanal</string>
+    <string name="Mediamensal">Média mensal</string>
+    <string name="Mediaanual">Média anual</string>
+    <string name="Lembrete">Lembretes</string>
+    <string name="horarioinicialefinal">Horario inicial e final</string>
+    <string name="somdolembrete">Som do lembrete</string>
+    <string name="sistema">Sistema</string>
+    <string name="idioma">Idioma</string>
+    <string name="redefinirdados">Redefinir Dados</string>
+    <string name="informacoes">Informações</string>
+    <string name="politicasdeprivacidade">Políticas de Privacidade</string>
+    <string name="sair">Sair</string>
+    <string name="perfil">Perfil</string>
+    <string name="meuperfil">Meu Perfil</string>
+    <string name="tipodepele">Tipo de Pele</string>
+</resources>

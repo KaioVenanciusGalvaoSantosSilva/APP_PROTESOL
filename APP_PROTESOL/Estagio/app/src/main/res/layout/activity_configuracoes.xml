@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="false"
+    android:background="@color/paleta_principal"
+    android:paddingLeft="4dp"
+    android:paddingTop="4dp"
+    android:paddingRight="4dp"
+    android:paddingBottom="4dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="200dp">
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+    <Button
+        android:id="@+id/btnVoltarMain"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:background="@drawable/home24px"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:id="@+id/btnHistorico"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:background="@drawable/history24px"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfiguracoes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnVoltarMain"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/btnConfiguracoes"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_settings_24px"
+        android:tint="#FFC107"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+
+    <ScrollView
+        android:layout_width="356dp"
+        android:layout_height="581dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/btnVoltarMain"
+        app:layout_constraintTop_toBottomOf="@+id/btnHistorico"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMeuPerfil"
+                android:layout_width="316dp"
+                android:layout_height="49dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center"
+                android:text="@string/meuperfil"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnHistorico"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/txtFototipo"
+                android:layout_width="316dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_horizontal|left"
+                android:text="@string/fototipo"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMeuPerfil"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/txtTipoDePele"
+                android:layout_width="316dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_horizontal|left"
+                android:text="@string/tipodepele"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtFototipo"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/proxVez22"
+                android:layout_width="316dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_horizontal|left"
+                android:text="@string/informacoes"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTipoDePele"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/proxVez"
+                android:layout_width="317dp"
+                android:layout_height="49dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center"
+                android:text="@string/Lembrete"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proxVez22"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/proxVez18"
+                android:layout_width="316dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_horizontal|left"
+                android:text="@string/horarioinicialefinal"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proxVez"
+                app:layout_constraintVertical_bias="0.048" />
+
+            <TextView
+                android:id="@+id/proxVez19"
+                android:layout_width="316dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_horizontal|left"
+                android:text="@string/somdolembrete"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proxVez18"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/proxVez2"
+                android:layout_width="317dp"
+                android:layout_height="53dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center"
+                android:text="@string/sistema"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proxVez19"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                android:id="@+id/proxVez10"
+                android:layout_width="316dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_horizontal|left"
+                android:text="@string/idioma"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proxVez2"
+                app:layout_constraintVertical_bias="0.043" />
+
+            <TextView
+                android:id="@+id/proxVez14"
+                android:layout_width="316dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_horizontal|left"
+                android:text="@string/redefinirdados"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias=".3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proxVez10"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txtPoliticadePrivacidade"
+                android:layout_width="316dp"
+                android:layout_height="45dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center_horizontal|left"
+                android:onClick="onClickAbrirPolitica"
+                android:text="@string/politicasdeprivacidade"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/proxVez14"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
